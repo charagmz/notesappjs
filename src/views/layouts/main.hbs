@@ -16,9 +16,11 @@
 </head>
 <body>
     {{> navigation }}
-    {{> messages }}
+
 
     <main class="container">
+        {{> messages }}
+        {{> errors }}
         {{{ body }}}
     </main>
     {{!-- SCRIPTS --}}
