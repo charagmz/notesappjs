@@ -45,4 +45,9 @@ router.post('/users/signup', async (req, res) => {
     }
 });
 
+router.get('/users/logout', (req, res) => {
+    req.logOut();//al inicializar passport agrega al objeto request el metodo logOut (ademas de otros)  
+    res.redirect('/');
+});
+
 module.exports = router;
